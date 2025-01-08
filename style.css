@@ -1,0 +1,69 @@
+:root {
+    --navBarHeight: 750px;
+    --sideBarHeigt: 100px;
+}
+
+#navBar {
+    background-color: rgb(233, 203, 253);
+    height: var(--navBarHeight);
+}
+
+#sidebar {
+    background-color: rgb(102, 102, 139);
+    width: var(--sideBarHeigt);
+    padding: 10px;
+}
+
+#main {
+    background-color: rgb(145, 208, 219);
+    width: calc(100% - 200px);
+}
+
+.flexRow {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color:azure;
+    border: 1px solid black;
+    margin: 4px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+body {
+    margin: 0px;
+}
