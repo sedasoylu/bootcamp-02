@@ -1,22 +1,22 @@
 :root {
-    --navBarHeight: 750px;
-    --sideBarHeigt: 100px;
+    --navBarHeight: 100px;
+    --sideBarWidth: 100px;
 }
 
 #navBar {
     background-color: rgb(233, 203, 253);
     height: var(--navBarHeight);
+    padding: 20px;
 }
 
 #sidebar {
     background-color: rgb(102, 102, 139);
-    width: var(--sideBarHeigt);
-    padding: 10px;
+    width: var(--sideBarWidth);
 }
 
 #main {
     background-color: rgb(145, 208, 219);
-    width: calc(100% - 200px);
+    width: calc(100% - var(--sideBarWidth));
 }
 
 .flexRow {
@@ -64,6 +64,14 @@
     justify-content: flex-end;
 }
 
+.menuItem {
+    width: 200px;
+    height: 100px
+}
 body {
     margin: 0px;
+}
+
+#about {
+    margin-right: 10px;
 }
